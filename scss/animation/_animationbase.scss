@@ -1,42 +1,24 @@
-/*
- * CSS Page Transitions
- * Don't forget to add vendor prefixes!
- */
-.m-scene {
-  /** Basic styles for an animated element */
-  .scene_element {
-    animation-duration: 0.25s;
+.animated {
+    animation-duration: 1s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
 
   }
 
-  /** An element that fades in */
-  .scene_element--fadein {
+  .fadein {
     animation-name: fadeIn;
   }
 
-  /** An element that fades in and slides up */
-  .scene_element--fadeinup {
+
+  .fadeinup {
     animation-name: fadeInUp;
   }
 
-  /** An element that fades in and slides from the right */
-  .scene_element--fadeinright {
+  .fadeinright {
     animation-name: fadeInRight;
   }
 
-    /** Reverse "exit" animations */
-  &.is-exiting {
-      .scene_element {
-        animation-direction: alternate-reverse;
-      }
-  }
-}
 
-/*
- * Keyframes
- */
 
 @keyframes fadeIn {
   0% {
