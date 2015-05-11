@@ -15,7 +15,6 @@ box1.onclick = function () {
 } else {
     classie.add(box1,"fadeinup");
 }
-
 };
 
 // window.onbeforeunload = function (e) {
